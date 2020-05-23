@@ -1,5 +1,9 @@
 <template>
-  <div class="container"></div>
+  <div class="test">
+    <div class="wrapper"></div>
+    <div class="wrapper-left"></div>
+    <div class="wrapper-right"></div>
+  </div>
 </template>
 
 <script>
@@ -10,14 +14,24 @@ export default {
 
 
 <style lang="scss">
-.container {
-  margin: 0 auto;
+.test {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  width: 100%;
 }
+.wrapper {
+  min-height: 100vh;
+  padding: 0 calc((1280px - 100vw) / 2);
+}
+
+.wrapper-left {
+  min-height: 100vh;
+  padding-left: calc((1280px - 100vw) / 2);
+}
+.wrapper-right {
+  min-height: 100vh;
+  padding-right: calc((1280px - 100vw) / 2);
+}
+
 
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
